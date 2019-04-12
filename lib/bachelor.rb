@@ -9,7 +9,8 @@ def all_contestants(data)
 end
 
 def get_contestant_name(data, occupation)
-  # code here
+  contestants = all_contestants(data)
+  contestants.find { |data| data["occupation"] == occupation } ["name"]
 end
 
 def count_contestants_by_hometown(data, hometown)
