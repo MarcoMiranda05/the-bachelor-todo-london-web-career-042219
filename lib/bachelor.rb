@@ -4,6 +4,10 @@ def get_first_name_of_season_winner(data, season)
   winner["name"].split(" ")[0]
 end
 
+def all_contestants(data)
+  data.values.flatten
+end
+
 def get_contestant_name(data, occupation)
   # code here
 end
